@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inscrição em campeonato</h1>
+
+        <form>
+            <div class="cadastro">
+                <h1>Cadastro</h1>
+
+                <div class="form-control">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" />
+                </div>
+
+                <div class="form-control">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" />
+                </div>
+
+                <div class="form-control">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" />
+                </div>
+
+                <div class="form-control">
+                    <label for="regiao">Região: </label>
+                    <select id="regiao" >
+                        <option value="">Selecione</option>
+                        <option value="america-norte">América do Norte</option>
+                        <option value="america-central">América Central</option>
+                        <option value="america-sul">América do Sul</option>
+                        <option value="europa">Europa</option>
+                        <option value="asia">Ásia</option>
+                        <option value="africa">África</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="dados-atleta">
+                <h1>Cadastro do atleta</h1>
+
+                <div class="form-control">
+                    <label for="nome">Nome completo: </label>
+                    <input type="text" id="nome" />
+                </div>
+
+                <div class="form-control">
+                    <label for="cpf">CPF</label>
+                    <input  type="text" id="cpf" 
+                            placeholder="000.000.000-00" maxlength="14" 
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"/>
+                </div>
+
+                <div class="form-control">
+                    <label for="data-nascimento">Data de nascimento</label>
+                    <input type="date" id="data-nascimento" />
+                </div>
+
+                <div class="form-control">
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso" />
+                </div>
+
+                <div class="form-control">
+                    <label for="genero">Gênero</label>
+                    <select id="genero" >
+                        <option value="selecione">Selecione</option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="faixa">Faixa atual</label>
+                    <select id="faixa" >
+                        <option value="selecione">Selecione</option>
+                        <option value="branca">Branca (a partir de 4 anos)</option>
+                        <option value="cinza">Cinza (4-15 anos)</option>
+                        <option value="amarela">Amarela (7-15 anos)</option>
+                        <option value="laranja">Laranja (10-15 anos)</option>
+                        <option value="verde">Verde (13-15 anos)</option>
+                        <option value="azul">Azul (acima de 16 anos)</option>
+                        <option value="roxa">Roxa (acima de 16 anos)</option>
+                        <option value="marrom">Marrom (acima de 18 anos)</option>
+                        <option value="preta">Preta (acima de 19 anos)</option>
+                        <option value="preta-vermelha">Preta com vermelha (acima de 50 anos)</option>
+                        <option value="vermelha-branca">Vermelha com branco (acima de 5 anos)</option>
+                        <option value="vermelha">Vermelha (acima de 67 anos)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="dados-campeonato">
+                <h1>Dados do campeonato</h1>
+                <div class="form-control">
+                    <label for="modalidade">Modalidade: </label>
+                    <select id="modalidade" >
+                        <option value="select">Selecione</option>
+                        <option value="gi">GI/com kimono</option>
+                        <option value="nogi">NOGI/sem kimono</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="ctgr-peso">Categoria de peso</label>
+                    <select id="ctgr-peso" >
+                        <option value="select">Selecione</option>
+                        <option value="galo">Galo</option>
+                        <option value="pluma">Pluma</option>
+                        <option value="pena">Pena</option>
+                        <option value="leve">Leve</option>
+                        <option value="medio">Médio</option>
+                        <option value="meio-pesado">Meio pesado</option>
+                        <option value="pesado">Pesado</option>
+                        <option value="super-pesado">Super pesado</option>
+                        <option value="pesadissimo">Pesadíssimo</option>
+                        <option value="ex-pes-1">Extra pesadíssimo - 1</option>
+                        <option value="ex-pes-2">Extra pesadíssimo - 2</option>
+                        <option value="ex-pes-3">Extra pesadíssimo - 3</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="ctgr-idade">Categoria de idade</label>
+                    <select id="ctgr-idade" >
+                        <option value="select">Selecione</option>
+                        <option value="p-mirim">Pré-mirim (4 e 5 anos)</option>
+                        <option value="mirim">Mirim (6 e 7 anos)</option>
+                        <option value="inf-a">Infantil A (8 e 9 anos)</option>
+                        <option value="inf-b">Infantil B (10 e 11 anos)</option>
+                        <option value="inf-juv-a">Infanto juvenil A (12 e 13 anos)</option>
+                        <option value="inf-juv-b">Infanto juvenil B (14 e 15 anos)</option>
+                        <option value="juv">Juvenil (16 e 17 anos)</option>
+                        <option value="adulto">Adulto (18 a 29 anos)</option>
+                        <option value="mas-1">Master 1 (30 a 35 anos)</option>
+                        <option value="mas-2">Master 2 (36 a 40 anos)</option>
+                        <option value="mas-3">Master 3 (41 a 45 anos)</option>
+                        <option value="mas-4">Master 4 (46 a 50 anos)</option>
+                        <option value="mas-5">Master 5 (51 a 55 anos)</option>
+                        <option value="mas-6">Master 6 (56 a 60 anos)</option>
+                        <option value="mas-7">Master 7 (a partir de 61 anos)</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="dados-academia">
+                <h1>Dados da academia</h1>
+                <div class="form-control">
+                    <label for="academia">Academia/equipe</label>
+                    <input type="text" id="academia" >
+                </div>
+
+                <div class="form-control">
+                    <label for="professor">Professor</label>
+                    <input type="text" id="professor" >
+                </div>
+            </div>
+
+        <br>
+
+            <button class="btn-cadastro">Concluir</button>
+            <button class="btn-limpar">Voltar</button>
+        </form>
+    </div>
+
+</body>
+</html>
